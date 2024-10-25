@@ -1,5 +1,5 @@
 import "./App.css";
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -24,7 +24,12 @@ const App = () => {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuLink>
-                  <Link to={"/patients"}>Patientenliste</Link>
+                  <NavLink
+                    to="/patients"
+                    className={({ isActive }) => (isActive ? "font-bold" : "")}
+                  >
+                    Patientenliste
+                  </NavLink>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
