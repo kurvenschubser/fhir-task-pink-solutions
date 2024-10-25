@@ -1,11 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
+import PatientDetailPage from "@/components/patientdetail/patientdetail";
+import PatientList from "@/components/patientlist/patientlist";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    children: [],
+    children: [
+      { path: "patients", element: <PatientList /> },
+      { path: "patient/:patientId", element: <PatientDetailPage /> },
+    ],
   },
 ]);
 
