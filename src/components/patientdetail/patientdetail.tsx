@@ -118,9 +118,6 @@ const PatientDetailPage = () => {
     <div>No data...</div>
   ) : (
     <div>
-      <Link to="/patients" className="text-primary">
-        Zurück
-      </Link>
       <PatientDetail patient={patient} />
     </div>
   );
