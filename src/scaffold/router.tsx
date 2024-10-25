@@ -8,6 +8,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
+      { index: true, element: <PatientList /> },
       { path: "patients", element: <PatientList /> },
       { path: "patient/:patientId", element: <PatientDetailPage /> },
     ],
