@@ -115,7 +115,7 @@ const PatientDetailPage = () => {
   }, [patientId]);
 
   return !patient ? (
-    <></>
+    <div>No data...</div>
   ) : (
     <div>
       <Link to="/patients" className="text-primary">
