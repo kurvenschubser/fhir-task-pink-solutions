@@ -28,7 +28,7 @@ function PatientDetailField({
       <div className="mt-0.5">
         <Icon className="h-5 w-5 text-muted-foreground" />
       </div>
-      <div className="space-y-1">
+      <div className="space-y-1 flex flex-col items-start">
         <Label className="text-sm text-muted-foreground">{label}</Label>
         <p className="text-sm font-medium">{value}</p>
       </div>
