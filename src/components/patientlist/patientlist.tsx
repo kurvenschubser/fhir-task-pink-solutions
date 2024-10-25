@@ -13,7 +13,7 @@ const PatientList = () => {
   }, []);
 
   return (
-    <div className="w-full">
+    <div className="w-full flex flex-col gap-2">
       {patients.map((patient) => (
         <PatientCard key={patient.id} patient={patient} />
       ))}
